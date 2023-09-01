@@ -1,0 +1,75 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+#app {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgb(2, 15, 32, 0.5);
+}
+.fon {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.mark {
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    display: flex;
+    height: 40px;
+    min-width: 40px;
+    padding: 0 15px;
+    align-items: center;
+    gap: 15px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.mark[data-state="disactive"] .text {
+    margin-top: -5px;
+    display: none;
+}
+.mark[data-state="disactive"] .plus {
+    width: 10px;
+}
+.mark[data-state="disactive"] .minus {
+    width: 10px;
+    display: none;
+}
+
+.mark[data-state="active"] .text {
+    margin-top: -5px;
+}
+.mark[data-state="active"] .plus {
+    width: 10px;
+    display: none;
+}
+.mark[data-state="active"] .minus {
+    width: 10px;
+}
+
+.mark[data-blue="active"] {
+    background-color: rgba(56, 119, 238);
+}
+.mark[data-blue="disactive"] {
+    background-color: rgba(56, 119, 238, 0.7);
+}
+
+.mark[data-green="active"] {
+    background-color: rgba(106, 191, 75);
+}
+.mark[data-green="disactive"] {
+    background-color: rgba(106, 191, 75, 0.7);
+}
