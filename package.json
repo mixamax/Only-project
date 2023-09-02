@@ -2,7 +2,6 @@
     "name": "only-pr",
     "private": true,
     "version": "0.0.0",
-    "homepage": "https://mixamax.github.io/Only-project",
     "type": "commonjs",
     "browserslist": [
         "cover 99%"
